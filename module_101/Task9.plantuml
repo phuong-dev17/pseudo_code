@@ -1,0 +1,21 @@
+@startuml
+    start
+        :print welcome message;
+    repeat
+        :print " Please enter your PIN";
+        : read PIN from the user;
+        if (PIN is valid ?) then (no)
+            :print "Invalid PIN, please try again";
+        else
+            :print " Please enter amount to withdraw";
+            :read amount from user;
+            if(amount <= current balance?) then (yes)
+                :current balance = current balance - amount;
+                :dispense cash;
+                :print "Transaction successful, your current balance is: <update current balance>;
+            else
+                :print "insufficient funds";
+            endif
+        endif
+    stop
+    @enduml
