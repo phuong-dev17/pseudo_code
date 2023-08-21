@@ -1,0 +1,7 @@
+@startuml
+start
+:print "insert radius";
+:read input from user;
+:return area = 4*radius*pi*2;
+stop
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+start
+:print "insert a month";
+:read inputMonth from the user;
+if (inputMonth == "january"||"february"||"march"?) then (yes)
+:print "spring";
+(no) elseif (inputMonth == "april"||"may"||"june"?)
+:print "summer";
+(no) elseif (inputMonth == "july"||"august"||"september"?)
+:print "auturmn";
+else
+:print "winter";
+endif
+stop
+@enduml

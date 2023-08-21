@@ -1,0 +1,12 @@
+@startuml
+start
+:currentNumber= 1;
+while (currentNumber <= 1000?)
+    if (currentNumber % 13 == 0?) then (yes)
+        :print "lucky 13";
+    else
+        :print "unlucky you";
+    endif
+endwhile
+stop
+@enduml

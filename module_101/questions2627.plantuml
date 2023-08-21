@@ -1,0 +1,14 @@
+@startuml
+start
+:initiate an array of objects (countryLanguage), each object has 2 properties that are country name and its language;
+:print "insert a country name";
+:read input from user;
+:initiate a variable index = 0;
+while (index < countryLanguage length?)
+    if (countryLanguage[index].country == input country name?) then (yes)
+    :print value of countryLanguage[index].country and countryLanguage[index].language;
+    endif
+    :index++;
+endwhile
+stop
+@enduml
